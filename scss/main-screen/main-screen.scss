@@ -306,7 +306,9 @@
     align-items: flex-start;
     justify-content: center;
     @media (max-width: 990px) {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
 }
 
