@@ -1,46 +1,31 @@
 $(document).ready(function() {
 
-    // var header = $("header");
 
-    // $(window).scroll(function() {
-
-    //     if ($(this).scrollTop() > 100) {
-
-    //         header.addClass("header-fix");
-
-    //     } else if ($(this).scrollTop() <= 100) {
-
-    //         header.removeClass("header-fix");
-
-    //     }
-
-    // });
-
-    $(".call-tab-1").on("click", function(){
+    $(".main-screen .call-tab-1").on("click", function() {
         $(".screen-btn").removeClass("active_btn");
-        $(".tabs").hide();
-        $(".tabs_1").show();
+        $(".main-screen .tabs").hide();
+        $(".main-screen .tabs_1").show();
         $(this).addClass("active_btn");
     });
 
-    $(".call-tab-2").on("click", function(){
+    $(".main-screen .call-tab-2").on("click", function() {
         $(".screen-btn").removeClass("active_btn");
-        $(".tabs").hide();
-        $(".tabs_2").show();
+        $(".main-screen .tabs").hide();
+        $(".main-screen .tabs_2").show();
         $(this).addClass("active_btn");
     });
 
-    $(".call-tab-3").on("click", function(){
+    $(".main-screen .call-tab-3").on("click", function() {
         $(".screen-btn").removeClass("active_btn");
-        $(".tabs").hide();
-        $(".tabs_3").show();
+        $(".main-screen .tabs").hide();
+        $(".main-screen .tabs_3").show();
         $(this).addClass("active_btn");
     });
 
-    $(".call-tab-4").on("click", function(){
+    $(".main-screen .call-tab-4").on("click", function() {
         $(".screen-btn").removeClass("active_btn");
-        $(".tabs").hide();
-        $(".tabs_4").show();
+        $(".main-screen .tabs").hide();
+        $(".main-screen .tabs_4").show();
         $(this).addClass("active_btn");
     });
 
@@ -54,6 +39,13 @@ $(document).ready(function() {
         dots: true,
         margin: 10,
         adaptiveHeight: true
+    });
+
+    $(".main-screen-btn").on("click", "a", function(event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 35;
+        $('body,html').animate({ scrollTop: top }, 1500);
     });
 
 });

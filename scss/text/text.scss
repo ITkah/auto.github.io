@@ -1,14 +1,13 @@
 .title-xl {
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: 2.5rem "gotham-bold";
+    font: bold 2.5rem "noto-sans-normal";
+    margin-bottom: 25px;
     text-align: center;
-    box-sizing: border-box;
-    border-radius: 100px;
+    color: #FF473B;
+    @media (max-width: 990px) {
+        text-align: center;
+        font: bold 1.5rem "noto-sans-normal";
+    }
 }
-
 
 .title-sm {
     font: 1.25rem "gotham-bold";
