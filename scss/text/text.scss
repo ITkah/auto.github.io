@@ -1,0 +1,32 @@
+.title-xl {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 2.5rem "gotham-bold";
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+
+.title-sm {
+    font: 1.25rem "gotham-bold";
+    @media (max-width: 990px) {
+        font-size: 1.125rem;
+    }
+}
+
+.text-light {
+    font: .95rem "noto-sans-normal";
+    @media (max-width: 990px) {
+        font-size: .87rem;
+    }
+}
+
+.text-bold {
+    font: .95rem "gotham-bold";
+    @media (max-width: 990px) {
+        font-size: .87rem;
+    }
+}

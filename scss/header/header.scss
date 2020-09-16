@@ -1,0 +1,203 @@
+header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 10px 0;
+    right: 0;
+    top: -1px;
+    z-index: 99;
+    transition: .3s;
+    @media (max-width: 990px) {
+        background: #fff;
+        position: relative;
+        padding: 10px 20px;
+        width: auto;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+    }
+}
+
+.header-social-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        margin: 0 12px;
+        position: relative;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 990px) {
+            margin: 0 20px 0 0;
+        }
+    }
+    .facebook {
+        &::before {
+            content: url(../img/header/fb.svg);
+            @media (max-width: 990px) {
+                content: url(../img/icon/fb-xl.svg); 
+            }
+        }
+    }
+    .insta {
+        &::before {
+            content: url(../img/header/insta.svg);
+            @media (max-width: 990px) {
+                content: url(../img/icon/insta-xl.svg); 
+            }
+        }
+    }
+    .telega {
+        &::before {
+            content: url(../img/header/telega.svg);
+            @media (max-width: 990px) {
+                content: url(../img/icon/telega-xl.svg); 
+            }
+        }
+    }
+    .phone-2 {
+        &::before {
+            content: url(../img/header/phone-ins.svg);
+            @media (max-width: 990px) {
+                content: url(../img/icon/phone-xl.svg); 
+            }
+        }
+    }
+    .wsap {
+        &::before {
+            content: url(../img/header/ws.svg);
+            @media (max-width: 990px) {
+                content: url(../img/icon/ws-xl.svg); 
+            }
+        }
+    }
+}
+
+.header-logo {
+    img {
+        height: 85px;
+        @media (max-width: 990px) {
+            height: 50px;
+            position: relative;
+        }
+    }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tell-white {
+        &::before {
+            content: url(../img/header/phone.svg);
+            position: absolute;
+            left: 0;
+            @media (max-width: 990px) {
+                content: url(../img/header/phone-dark.png);
+            }
+        }
+    }
+}
+
+.menu p,a {
+    cursor: pointer;
+}
+
+.header-social {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    @media (max-width: 990px) {
+        margin: 0;
+    }
+    a {
+        color: #fff;
+        font:  1rem "gotham-bold";
+        position: relative;
+        padding-left: 30px;
+        @media (max-width: 990px) {
+            color: #000;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    a:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+.header-fix {
+    background: #fff;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .1);
+    .header-social {
+        a {
+            color: #000;
+        }
+    }
+    .tell-white {
+        &::before {
+            content: url(../img/header/phone-dark.png);
+        }
+    }
+}
+
+.desk-header {
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.btn-call-menu {
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+    }
+}
+
+main {
+    overflow: hidden;
+}
+  
+footer {
+    overflow: hidden;
+}
+  
+@media (max-width: 576px) {
+    body,html {
+      overflow-x: hidden;
+    }
+}
+  
+
+.desk-header {
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.header_mob_info {
+    display: none;
+    @media (max-width: 990px) {
+        display: none;
+        position: absolute;
+        top: 72px;
+        z-index: 999;
+        background: #fff;
+        box-sizing: border-box;
+        left: 0;
+        padding: 5px 10px;
+        width: 100%;
+    }
+    .header-social {
+        margin-left: 6px;
+    }
+    .header-social-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,92 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+.padding {
+    padding: 0 40px;
+    @media (max-width: 990px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 576px) {
+        padding: 0 20px;
+    }
+}
+
+.margin {
+    margin-bottom: 80px;
+    @media (max-width: 990px) {
+        margin-bottom: 60px;
+    }
+}
+
+button,
+input,
+a {
+    outline: none;
+}
+
+main {
+    overflow-x: hidden;
+    min-height: calc(100vh - 80px);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__content.active {
+    display: block;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #C53D28;
+    cursor: pointer;
+    opacity: .5;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+    cursor: pointer;
+}
