@@ -222,19 +222,12 @@ footer {
     right: 0;
     top: 0;
     bottom: 0; }
-    @media (max-width: 768px) {
-      .main-screen::before {
-        height: 405px; } }
-    @media (max-width: 320px) {
-      .main-screen::before {
-        height: 450px; } }
   @media (max-width: 990px) {
     .main-screen {
-      margin-bottom: 90px;
-      height: auto; } }
+      margin-bottom: 45px; } }
   @media (max-width: 768px) {
     .main-screen {
-      height: auto; } }
+      height: 550px; } }
   .main-screen .container {
     height: 100%; }
   .main-screen .main-screen-img {
@@ -247,12 +240,6 @@ footer {
     -o-object-fit: cover;
        object-fit: cover;
     top: 0; }
-    @media (max-width: 768px) {
-      .main-screen .main-screen-img {
-        height: 405px; } }
-    @media (max-width: 320px) {
-      .main-screen .main-screen-img {
-        height: 447px; } }
 
 .main-screen-container {
   position: relative;
@@ -283,7 +270,7 @@ footer {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      bottom: -62px; } }
+      bottom: 0; } }
   .main-screen-container .main-title {
     text-align: center;
     color: #fff;
@@ -349,36 +336,11 @@ footer {
       transition: .2s; }
       @media (max-width: 576px) {
         .main-screen-container .main-screen-btn .screen-btn {
-          height: 70px; } }
+          font: 400 .9rem/23px 'Noto Sans', sans-serif; } }
       .main-screen-container .main-screen-btn .screen-btn:hover {
         background: #FC3034;
         border: 3px solid #FC3034; }
     .main-screen-container .main-screen-btn .active_btn {
-      background: #FC3034;
-      border: 3px solid #FC3034; }
-    @media (max-width: 768px) {
-      .main-screen-container .main-screen-btn .screen-btn:nth-child(2) {
-        color: #fff;
-        border: 3px solid #fff; } }
-    .main-screen-container .main-screen-btn .screen-btn:nth-child(2):hover {
-      color: #fff;
-      background: #FC3034;
-      border: 3px solid #FC3034; }
-    @media (max-width: 768px) {
-      .main-screen-container .main-screen-btn .screen-btn:nth-child(3) {
-        color: #fff;
-        border: 3px solid #fff; } }
-    @media (max-width: 768px) {
-      .main-screen-container .main-screen-btn .screen-btn:nth-child(3):hover {
-        color: #000;
-        background: #FC3034;
-        border: 3px solid #FC3034; } }
-    @media (max-width: 768px) {
-      .main-screen-container .main-screen-btn .screen-btn:nth-child(4) {
-        color: #000;
-        border: 3px solid #000; } }
-    .main-screen-container .main-screen-btn .screen-btn:nth-child(4):hover {
-      color: #fff;
       background: #FC3034;
       border: 3px solid #FC3034; }
 
@@ -542,7 +504,15 @@ footer {
   grid-gap: 20px; }
   @media (max-width: 990px) {
     .tabs_what_wrap {
-      grid-template-columns: 1fr; } }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
   .tabs_what_wrap .car_img {
     max-width: 100%;
     height: auto; }
@@ -550,6 +520,11 @@ footer {
       .tabs_what_wrap .car_img {
         margin: 0 auto;
         display: block; } }
+    @media (max-width: 576px) {
+      .tabs_what_wrap .car_img {
+        -o-object-fit: contain;
+           object-fit: contain;
+        height: 175px; } }
 
 .tabs_item_wrap {
   display: -webkit-box;
@@ -996,7 +971,7 @@ body::-webkit-scrollbar-track {
   margin-right: 10px; }
   @media (max-width: 990px) {
     .contact-img-box {
-      margin: 0; } }
+      margin: 0 0 15px 0; } }
   .contact-img-box .contact-img-title {
     color: #C53D28;
     font: 600 1.85rem 'Noto Sans', sans-serif;

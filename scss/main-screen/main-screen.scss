@@ -13,19 +13,12 @@
         right: 0;
         top: 0;
         bottom: 0;
-        @media (max-width: 768px) {
-            height: 405px;
-        }
-        @media (max-width: 320px) {
-            height: 450px;
-        }
     }
     @media (max-width: 990px) {
-        margin-bottom: 90px;
-        height: auto;
+        margin-bottom: 45px;
     }
     @media (max-width: 768px) {
-        height: auto;
+        height: 550px;
     }
     .container {
         height: 100%;
@@ -39,12 +32,6 @@
         bottom: 0;
         object-fit: cover;
         top: 0;
-        @media (max-width: 768px) {
-            height: 405px;
-        }
-        @media (max-width: 320px) {
-            height: 447px;
-        }
     }
 }
 
@@ -60,7 +47,7 @@
     bottom: -40px;
     @media (max-width: 990px) {
         justify-content: center;
-        bottom: -62px;
+        bottom: 0;
     }
     .main-title {
         text-align: center;
@@ -118,7 +105,7 @@
             cursor: pointer;
             transition: .2s;
             @media (max-width: 576px) {
-                height: 70px;
+                font: 400 .9rem/23px 'Noto Sans', sans-serif;
             }
             &:hover {
                 background: #FC3034;
@@ -128,39 +115,6 @@
         .active_btn {
             background: #FC3034;
             border: 3px solid #FC3034;
-        }
-        .screen-btn:nth-child(2) {
-            @media (max-width: 768px) {
-                color: #fff;
-                border: 3px solid #fff;
-            }
-            &:hover {
-                color: #fff;
-                background: #FC3034;
-                border: 3px solid #FC3034;
-            }
-        }
-        .screen-btn:nth-child(3) {
-            @media (max-width: 768px) {
-                color: #fff;
-                border: 3px solid #fff;
-            }
-            &:hover {
-                color: #000;
-                background: #FC3034;
-                border: 3px solid #FC3034;
-            }
-        }
-        .screen-btn:nth-child(4) {
-            @media (max-width: 768px) {
-                color: #000;
-                border: 3px solid #000;
-            }
-            &:hover {
-                color: #fff;
-                background: #FC3034;
-                border: 3px solid #FC3034;
-            }
         }
     }
 }
@@ -325,7 +279,8 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     @media (max-width: 990px) {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
     }
     .car_img {
         max-width: 100%;
@@ -333,6 +288,10 @@
         @media (max-width: 990px) {
             margin: 0 auto;
             display: block;
+        }
+        @media (max-width: 576px) {
+            object-fit: contain;
+            height: 175px;
         }
     }
 }
