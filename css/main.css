@@ -209,7 +209,25 @@ footer {
 
 .main-screen {
   height: 100vh;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
+  .main-screen::before {
+    content: url();
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+    @media (max-width: 768px) {
+      .main-screen::before {
+        height: 405px; } }
+    @media (max-width: 320px) {
+      .main-screen::before {
+        height: 450px; } }
   @media (max-width: 990px) {
     .main-screen {
       margin-bottom: 90px;
@@ -231,7 +249,7 @@ footer {
     top: 0; }
     @media (max-width: 768px) {
       .main-screen .main-screen-img {
-        height: 400px; } }
+        height: 405px; } }
     @media (max-width: 320px) {
       .main-screen .main-screen-img {
         height: 447px; } }
@@ -348,10 +366,10 @@ footer {
       border: 3px solid #FC3034; }
     @media (max-width: 768px) {
       .main-screen-container .main-screen-btn .screen-btn:nth-child(3) {
-        color: #000;
-        border: 3px solid #000; } }
+        color: #fff;
+        border: 3px solid #fff; } }
     .main-screen-container .main-screen-btn .screen-btn:nth-child(3):hover {
-      color: #fff;
+      color: #000;
       background: #FC3034;
       border: 3px solid #FC3034; }
     @media (max-width: 768px) {
@@ -416,6 +434,9 @@ footer {
       .tabs_this_box .this_text {
         text-align: center;
         font: normal 1rem/28px "noto-sans-normal"; } }
+    @media (max-width: 576px) {
+      .tabs_this_box .this_text br {
+        display: none; } }
   .tabs_this_box .this_video {
     max-width: 100%;
     height: 350px;
@@ -467,10 +488,11 @@ footer {
           -ms-flex-align: center;
               align-items: center; }
       .tabs_what_box ul li span {
-        margin-right: 15px; }
+        margin-right: 15px;
+        width: 50px;
+        display: block; }
       @media (max-width: 990px) {
         .tabs_what_box ul li {
-          padding: 0 0 0 30px;
           font: normal 1rem/26px "noto-sans-normal"; } }
 
 .tabs_pay_box .this_title {
@@ -506,6 +528,12 @@ footer {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (max-width: 990px) {
+    .this_info {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .tabs_what_wrap {
   display: grid;
@@ -786,7 +814,7 @@ footer {
   .team-mob .team-mob-box {
     border-radius: 20px;
     background: #fff;
-    padding: 10px;
+    padding: 20px 15px;
     -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
             box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
     margin: 10px; }

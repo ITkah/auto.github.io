@@ -1,6 +1,25 @@
 .main-screen {
     height: 100vh;
     margin-bottom: 50px;
+    position: relative;
+    &::before {
+        content: url();
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        @media (max-width: 768px) {
+            height: 405px;
+        }
+        @media (max-width: 320px) {
+            height: 450px;
+        }
+    }
     @media (max-width: 990px) {
         margin-bottom: 90px;
         height: auto;
@@ -21,7 +40,7 @@
         object-fit: cover;
         top: 0;
         @media (max-width: 768px) {
-            height: 400px;
+            height: 405px;
         }
         @media (max-width: 320px) {
             height: 447px;
@@ -123,11 +142,11 @@
         }
         .screen-btn:nth-child(3) {
             @media (max-width: 768px) {
-                color: #000;
-                border: 3px solid #000;
+                color: #fff;
+                border: 3px solid #fff;
             }
             &:hover {
-                color: #fff;
+                color: #000;
                 background: #FC3034;
                 border: 3px solid #FC3034;
             }
@@ -208,6 +227,11 @@
             text-align: center;
             font: normal 1rem/28px "noto-sans-normal";
         }
+        br {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
     }
     .this_video {
         max-width: 100%;
@@ -258,9 +282,10 @@
             align-items: center;
             span {
                 margin-right: 15px;
+                width: 50px;
+                display: block;
             }
             @media (max-width: 990px) {
-                padding: 0 0 0 30px;
                 font: normal 1rem/26px "noto-sans-normal";
             }
         }
@@ -290,6 +315,9 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    @media (max-width: 990px) {
+        align-items: center;
+    }
 }
 
 .tabs_what_wrap {

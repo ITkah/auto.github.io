@@ -48,4 +48,13 @@ $(document).ready(function() {
         $('body,html').animate({ scrollTop: top }, 1500);
     });
 
+    $('div.tabs__caption').on('click', 'div:not(.active)', function() {
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+
+    $(".team-container .tabs__content:first-child").addClass("active");
+    $(".tabs__caption div:first-child").addClass("active");
+
 });
