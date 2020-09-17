@@ -368,10 +368,11 @@ footer {
       .main-screen-container .main-screen-btn .screen-btn:nth-child(3) {
         color: #fff;
         border: 3px solid #fff; } }
-    .main-screen-container .main-screen-btn .screen-btn:nth-child(3):hover {
-      color: #000;
-      background: #FC3034;
-      border: 3px solid #FC3034; }
+    @media (max-width: 768px) {
+      .main-screen-container .main-screen-btn .screen-btn:nth-child(3):hover {
+        color: #000;
+        background: #FC3034;
+        border: 3px solid #FC3034; } }
     @media (max-width: 768px) {
       .main-screen-container .main-screen-btn .screen-btn:nth-child(4) {
         color: #000;
