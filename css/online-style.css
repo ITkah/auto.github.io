@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "noto-sans-normal";
+  font-family: 'Noto Sans', sans-serif;
   src: url("../fonts/noto/NotoSans-Regular.ttf"), url("../fonts/noto/NotoSans.woff") format("woff"), url("../fonts/noto/NotoSans.woff2") format("woff2"); }
 
 @font-face {
@@ -269,10 +269,10 @@ footer {
 
 .with-us .with-us-text {
   color: #282828;
-  font: 1.2rem/28px "noto-sans-normal"; }
+  font: 1.2rem/28px 'Noto Sans', sans-serif; }
   @media (max-width: 990px) {
     .with-us .with-us-text {
-      font: .95rem/22px "noto-sans-normal"; } }
+      font: .95rem/22px 'Noto Sans', sans-serif; } }
 
 .with-us .receive-box {
   position: relative;
@@ -326,10 +326,10 @@ footer {
     margin-bottom: 12px; }
   .does-box .does-text {
     text-align: center;
-    font: 1.2rem/28px "noto-sans-normal"; }
+    font: 1.2rem/28px 'Noto Sans', sans-serif; }
     @media (max-width: 990px) {
       .does-box .does-text {
-        font: .95rem/22px "noto-sans-normal"; } }
+        font: .95rem/22px 'Noto Sans', sans-serif; } }
 
 .does-box:first-child::after {
   content: url(../img/does/arrow-1.svg);
@@ -457,7 +457,7 @@ footer {
       .sale-container .sale-title {
         font-size: 1.9rem; } }
   .sale-container .sale-text {
-    font: 1.125rem "noto-sans-normal"; }
+    font: 1.125rem 'Noto Sans', sans-serif; }
     @media (max-width: 990px) {
       .sale-container .sale-text {
         font-size: .95rem; } }
@@ -591,14 +591,14 @@ footer {
       width: 65px; }
   .plus-school-box .plus-title {
     color: #C53D28;
-    font: 500 1.2rem "noto-sans-normal";
+    font: 500 1.2rem 'Noto Sans', sans-serif;
     margin-bottom: 5px; }
   .plus-school-box .plus-text {
     color: #000;
-    font: normal .95rem/23px "noto-sans-normal"; }
+    font: normal .95rem/23px 'Noto Sans', sans-serif; }
     @media (max-width: 768px) {
       .plus-school-box .plus-text {
-        font: normal .87rem/18px "noto-sans-normal"; } }
+        font: normal .87rem/18px 'Noto Sans', sans-serif; } }
 
 .for-recording-main {
   display: -webkit-box;
@@ -645,10 +645,10 @@ footer {
         margin-bottom: 10px; } }
   .for-recording-main .recording-text {
     color: #000;
-    font: 1.2rem/30px "noto-sans-normal"; }
+    font: 1.2rem/30px 'Noto Sans', sans-serif; }
     @media (max-width: 990px) {
       .for-recording-main .recording-text {
-        font: .95rem/22px "noto-sans-normal";
+        font: .95rem/22px 'Noto Sans', sans-serif;
         text-align: center; } }
 
 .for-recording-sm-wrap {
@@ -721,12 +721,12 @@ footer {
   .for-recording-sm-wrap .recording-info {
     height: 60px;
     color: #000;
-    font: 1.4rem/35px "noto-sans-normal";
+    font: 1.4rem/35px 'Noto Sans', sans-serif;
     text-align: center; }
     @media (max-width: 990px) {
       .for-recording-sm-wrap .recording-info {
         height: auto;
-        font: .75rem/18px "noto-sans-normal"; } }
+        font: .75rem/18px 'Noto Sans', sans-serif; } }
     @media (max-width: 990px) {
       .for-recording-sm-wrap .recording-info span {
         display: none; } }
@@ -779,7 +779,7 @@ footer {
     margin-right: 10px; }
   .curse-info-box .curse-text {
     color: #000;
-    font: .95rem/22px "noto-sans-normal"; }
+    font: .95rem/22px 'Noto Sans', sans-serif; }
 
 .curse-info-box:first-child {
   width: 200px;
@@ -877,7 +877,7 @@ footer {
       max-width: 100%; } }
   .curse-pay-wrap .curse-pay {
     color: #000;
-    font: 1.87rem "noto-sans-normal";
+    font: 1.87rem 'Noto Sans', sans-serif;
     margin-bottom: 20px;
     position: relative; }
     @media (max-width: 990px) {
@@ -913,7 +913,7 @@ footer {
   .curse-pay-wrap .curse-info {
     text-align: center;
     color: #898989;
-    font: .95rem "noto-sans-normal"; }
+    font: .95rem 'Noto Sans', sans-serif; }
     @media (max-width: 990px) {
       .curse-pay-wrap .curse-info {
         font-size: .87rem; } }
@@ -1213,7 +1213,7 @@ footer {
 
 .form .form-sm-title {
   margin-bottom: 15px;
-  font: normal 1rem "noto-sans-normal"; }
+  font: normal 1rem 'Noto Sans', sans-serif; }
 
 @media (max-width: 990px) {
   .form br {
@@ -1245,7 +1245,7 @@ footer {
     border-radius: 20px;
     color: #fff;
     outline: none;
-    font: normal 1.125rem "noto-sans-normal";
+    font: normal 1.125rem 'Noto Sans', sans-serif;
     border: none;
     padding: 12px;
     -webkit-transition: .3s;
@@ -1259,7 +1259,7 @@ footer {
 
 .politica-form {
   opacity: .5;
-  font: normal .8rem "noto-sans-normal"; }
+  font: normal .8rem 'Noto Sans', sans-serif; }
   @media (max-width: 576px) {
     .politica-form br {
       display: none; } }
@@ -1368,12 +1368,12 @@ footer {
         font: 1.4rem/28px "gotham-bold";
         max-width: 260px; } }
   .online-container .online-text {
-    font: 1.2rem/28px "noto-sans-normal";
+    font: 1.2rem/28px 'Noto Sans', sans-serif;
     margin-bottom: 25px;
     text-align: center; }
     @media (max-width: 990px) {
       .online-container .online-text {
-        font: .95rem/22px "noto-sans-normal";
+        font: .95rem/22px 'Noto Sans', sans-serif;
         margin-bottom: 15px;
         max-width: 260px; } }
   @media (max-width: 576px) {
@@ -1494,7 +1494,7 @@ body::-webkit-scrollbar-track {
       margin: 0 0 35px 0; } }
   .contact-img-box .contact-img-title {
     color: #C53D28;
-    font: 600 1.85rem "noto-sans-normal";
+    font: 600 1.85rem 'Noto Sans', sans-serif;
     text-align: center;
     margin-bottom: 15px; }
     @media (max-width: 990px) {
@@ -1575,7 +1575,7 @@ body::-webkit-scrollbar-track {
         margin-bottom: 15px; } }
   .contact-box .contact-info {
     color: #000;
-    font: normal 1.1rem/25px "noto-sans-normal"; }
+    font: normal 1.1rem/25px 'Noto Sans', sans-serif; }
 
 .contact-map {
   position: relative;
@@ -1764,7 +1764,7 @@ body::-webkit-scrollbar-track {
       font-size: 1.125rem; } }
 
 .text-light {
-  font: .95rem "noto-sans-normal"; }
+  font: .95rem 'Noto Sans', sans-serif; }
   @media (max-width: 990px) {
     .text-light {
       font-size: .87rem; } }
@@ -2018,7 +2018,7 @@ footer {
 
 .politika-footer p {
   color: #000;
-  font: 500 .8rem "noto-sans-normal";
+  font: 500 .8rem 'Noto Sans', sans-serif;
   opacity: .5; }
   @media (max-width: 990px) {
     .politika-footer p {
@@ -2052,7 +2052,7 @@ footer {
 }
 
 .politika-footer a{
-  font: 500 .8rem "noto-sans-normal";
+  font: 500 .8rem 'Noto Sans', sans-serif;
   margin: 0;
 }
 

@@ -1,11 +1,11 @@
 .title-xl {
-    font: bold 2.5rem "noto-sans-normal";
+    font: bold 2.5rem 'Noto Sans', sans-serif;
     margin-bottom: 25px;
     text-align: center;
     color: #FF473B;
     @media (max-width: 990px) {
         text-align: center;
-        font: bold 1.5rem "noto-sans-normal";
+        font: bold 1.5rem 'Noto Sans', sans-serif;
     }
 }
 
@@ -17,7 +17,7 @@
 }
 
 .text-light {
-    font: .95rem "noto-sans-normal";
+    font: .95rem 'Noto Sans', sans-serif;
     @media (max-width: 990px) {
         font-size: .87rem;
     }
