@@ -3,29 +3,29 @@ $(document).ready(function() {
 
     $(".main-screen .call-tab-1").on("click", function() {
         $(".screen-btn").removeClass("active_btn");
-        $(".main-screen .tabs").hide();
-        $(".main-screen .tabs_1").show();
+        $(".wrapersMain .tabs").hide();
+        $(".wrapersMain .tabs_1").show();
         $(this).addClass("active_btn");
     });
 
     $(".main-screen .call-tab-2").on("click", function() {
         $(".screen-btn").removeClass("active_btn");
-        $(".main-screen .tabs").hide();
-        $(".main-screen .tabs_2").show();
+        $(".wrapersMain .tabs").hide();
+        $(".wrapersMain .tabs_2").show();
         $(this).addClass("active_btn");
     });
 
     $(".main-screen .call-tab-3").on("click", function() {
         $(".screen-btn").removeClass("active_btn");
-        $(".main-screen .tabs").hide();
-        $(".main-screen .tabs_3").show();
+        $(".wrapersMain .tabs").hide();
+        $(".wrapersMain .tabs_3").show();
         $(this).addClass("active_btn");
     });
 
     $(".main-screen .call-tab-4").on("click", function() {
         $(".screen-btn").removeClass("active_btn");
-        $(".main-screen .tabs").hide();
-        $(".main-screen .tabs_4").show();
+        $(".wrapersMain .tabs").hide();
+        $(".wrapersMain .tabs_4").show();
         $(this).addClass("active_btn");
     });
 
