@@ -419,7 +419,7 @@ footer {
     border-radius: 10px; }
     @media (max-width: 990px) {
       .tabs_this_box .this_video {
-        height: auto;
+        height: 230px;
         width: 100%; } }
 
 .tabs_what_box {
