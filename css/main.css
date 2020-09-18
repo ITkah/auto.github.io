@@ -222,11 +222,11 @@ footer {
   position: relative; }
   .main-screen::before {
     content: url();
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 9;
+    z-index: 1;
     left: 0;
     right: 0;
     top: 0;
@@ -248,7 +248,8 @@ footer {
     bottom: 0;
     -o-object-fit: cover;
        object-fit: cover;
-    top: 0; }
+    top: 0;
+    z-index: -2; }
 
 .main-screen-container {
   position: relative;
