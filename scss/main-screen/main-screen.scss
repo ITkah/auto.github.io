@@ -108,24 +108,24 @@
                 font: 400 .9rem/23px 'Noto Sans', sans-serif;
             }
             &:hover {
-                background: #FC3034;
-                border: 3px solid #FC3034;
+                background: #c53d28;
+                border: 3px solid #c53d28;
             }
         }
         .active_btn {
-            background: #FC3034;
-            border: 3px solid #FC3034;
+            background: #c53d28;
+            border: 3px solid #c53d28;
         }
     }
 }
 
 .tabs {
     .this_title {
-        font: bold 3.4rem 'Noto Sans', sans-serif;
+        font: bold 3.6rem 'Noto Sans', sans-serif;
         margin-bottom: 25px;
         @media (max-width: 990px) {
             text-align: center;
-            font: bold 1.75rem 'Noto Sans', sans-serif;
+            font: bold 2rem 'Noto Sans', sans-serif;
         }
     }
 }
@@ -166,7 +166,7 @@
         }
     }
     .this_title {
-        color: #FF473B;
+        color: #c53d28;
         font-weight: bold;
         margin-bottom: 20px;
         @media (max-width: 990px) {
@@ -206,7 +206,7 @@
     }
     .this_title {
         text-align: left;
-        color: #FF473B;
+        color: #c53d28;
         position: relative;
         margin-bottom: 15px;
         @media (max-width: 990px) {
@@ -238,6 +238,9 @@
                 margin-right: 15px;
                 width: 50px;
                 display: block;
+                @media (max-width: 360px) {
+                    width: 65px;
+                }
             }
             @media (max-width: 990px) {
                 font: normal 1rem/26px 'Noto Sans', sans-serif;
@@ -249,7 +252,7 @@
 .tabs_pay_box {
     .this_title {
         text-align: center;
-        color: #FF473B;
+        color: #c53d28;
     }
     .this_text {
         text-align: center;
@@ -321,7 +324,7 @@
         margin: 0;
     }
     .tabs_item_title {
-        background: #FF473B;
+        background: #c53d28;
         border-radius: 13px 13px 0px 0px;
         padding: 25px;
         display: flex;
@@ -344,7 +347,7 @@
         font: normal 1.2rem 'Noto Sans', sans-serif;
         color: #FFF;
         padding: 8px 30px;
-        background: #FD5458;
+        background: #c53d28;
         box-shadow: 5px 3px 20px rgba(213, 74, 74, .25);
         border-radius: 10px;
         display: inline-block;
@@ -381,7 +384,7 @@
                 color: #000;
                 font: normal 1.2rem 'Noto Sans', sans-serif;
                 span {
-                    color: #FF473B;
+                    color: #c53d28;
                 }
                 @media (max-width: 990px) {
                     font: normal .95rem 'Noto Sans', sans-serif;
@@ -400,7 +403,7 @@
             .tabs_item_pryce {
                 grid-column-start: 1;
                 grid-column-end: 3;
-                color: #FF473B;
+                color: #c53d28;
                 font: bold 1.2rem 'Noto Sans', sans-serif;
                 span {
                     font-size: .9rem;

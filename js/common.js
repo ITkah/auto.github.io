@@ -57,4 +57,47 @@ $(document).ready(function() {
     $(".team-container .tabs__content:first-child").addClass("active");
     $(".tabs__caption div:first-child").addClass("active");
 
+    $('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+
+
+    $(".popup-with-form").on("click", function () {
+        let value = $(this).attr("data-curse");
+        $(".hide-curse").val(value);
+    });
+
+    var url = "https://ucavtoshkola.com.ua/success";
+
+    $(".modal-curse").submit(function() {
+        var form_data = $(this).serializeArray();
+        $.ajax({
+            type: "POST",
+            url: "../../mail.php",
+            data: form_data,
+            success: function() {
+                $(location).attr('href',url);
+                $('.mfp-close').click();
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+        return false;
+    });
+
 });

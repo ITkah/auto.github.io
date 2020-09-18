@@ -11,10 +11,6 @@
 .contact-info-social {
     display: flex;
     align-items: center;
-    padding-left: 35px;
-    @media (max-width: 990px) {
-        padding: 0;
-    }
     a {
         margin-right: 30px;
         @media (max-width: 990px) {
